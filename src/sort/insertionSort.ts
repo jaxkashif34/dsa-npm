@@ -61,6 +61,7 @@ export const insertionSort = (arr: number[]) => {
     */
     arr[j + 1] = numberToInsert;
   }
+  return arr;
 };
 
 // Detailed Explanation

@@ -50,6 +50,7 @@ export const bubbleSort = (array: number[]) => {
       }
     }
   } while (swapped);
+  return array;
 };
 
 // basically we are comparing two elements and if the first one is bigger than the second one we swap them

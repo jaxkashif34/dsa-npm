@@ -32,6 +32,7 @@ the same value for lower indexes)
 */
 
 export const countSort = (arr: number[]): number[] => {
+  if (arr.length === 0) return [];
   // Step 1: Find the maximum value in the input array to determine the size of the countArray
   const max = Math.max(...arr);
 
@@ -86,6 +87,7 @@ export const countSort = (arr: number[]): number[] => {
 };
 
 export const countSortConsiderNegative = (arr: number[]): number[] => {
+  if (arr.length === 0) return [];
   // Step 1: Find the maximum and minimum values in the input array
   const max = Math.max(...arr);
   const min = Math.min(...arr);

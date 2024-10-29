@@ -51,4 +51,5 @@ export const selectionSort = (arr: number[]) => {
     }
     if (minIndex !== i) [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]; // this condition will only become false when array is already sorted
   }
+  return arr;
 };
